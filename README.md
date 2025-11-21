@@ -31,9 +31,7 @@ Then it outputs:
 
 ## ▶️ How to Run
 
-```text
-run F.L.P.py.
-```
+- run F.L.P.py.
 
 ---
 
