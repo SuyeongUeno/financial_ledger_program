@@ -30,23 +30,29 @@ Then it outputs:
 ---
 
 ## ▶️ How to Run
-```bash
-python3 account_book_v1.py
+
+```text
+run F.L.P.py.
+```
+
+---
 
 ## 🧾 Example Output (Text)
+
+```text
 ===거래 내역===
 잔액: 30000원
 입금 원금: 0원 50000원 50000원 2025-11-23
 출금 원금: 50000원 20000원 30000원 2025-11-23
+```
+
+---
 
 ## 🚀 Future Improvements
 
 Planned upgrades that will be applied through continued learning:
 
-Multiple transaction inputs (not limited to a single income and expense)
-
-Menu system with condition selection (deposit / withdrawal / view balance / view history / exit)
-
-Loop-based continuous execution instead of a single run
-
-Save and load transaction history from a file (CSV / JSON / TXT)
+- Multiple transaction inputs (not limited to a single income and expense)
+- Menu system with condition selection (deposit / withdrawal / view balance / view history / exit)
+- Loop-based continuous execution instead of a single run
+- Save and load transaction history from a file (CSV / JSON / TXT)
