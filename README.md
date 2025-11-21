@@ -54,3 +54,10 @@ Planned upgrades that will be applied through continued learning:
 - Menu system with condition selection (deposit / withdrawal / view balance / view history / exit)
 - Loop-based continuous execution instead of a single run
 - Save and load transaction history from a file (CSV / JSON / TXT)
+
+---
+
+## 📌 Project Roadmap
+Development is continually tracked and updated through the GitHub Project board.
+
+🔗 Roadmap: https://github.com/<USERNAME>/<REPO>/projects/1
