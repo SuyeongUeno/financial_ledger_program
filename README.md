@@ -61,7 +61,7 @@ Then it outputs:
 
 ## ▶️ How to Run
 ```bash
-python3 account_book_v1.py
+python3 F.L.P.py
 ```
 
 ---
