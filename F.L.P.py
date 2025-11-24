@@ -2,45 +2,51 @@
 balance = 0
 balance_0 = balance
 
-#입금 금액
-deposit = int(input("수익: "))
-
-#출금 금액
-withdraw = int(input("지출: "))
-
-#작성일
-N = str(input("작성일: "))
-
-#입금
-balance_1 = balance + deposit
-balance += deposit
-
-#출금
-balance_2 = balance_1 - withdraw
-balance -= withdraw
-
 #리스트
 main = []
 
-#입금 거래 내역
-deposit_list = ["입금",
-                      "원금: " + str(balance_0) + "원",
-                      (str(deposit) + "원"),
-                      (str(balance_1) + "원"),
-                      N]
-main.append(deposit_list)
+while True:
+    print("====메뉴====")
+    print("1. 입금")
+    print("2. 출금")
+    print("3. 잔액 보기")
+    print("4. 거래 내역 보기")
+    print("5. 종료")
 
-#출금 거래 내역
-withdraw_list = ["출금",
-                       "원금: " + str(balance_1) + "원",
-                       (str(withdraw) + "원"),
-                       (str(balance_2) + "원"),
-                       N]
-main.append(withdraw_list)
-balance_0 = balance_2
+    menu = input("메뉴를 선택하세요.")
+#입금
+    if menu == "1":    
+        deposit = int(input("수익: "))
+        N = str(input("작성일: "))
+        balance += deposit
+        main.append(["입금", deposit, balance, N])
+        print("입금 완료!")
 
-#출력
-print("===거래 내역===")
-print("잔액: " + str(balance) + "원")
-print(main[0][0],main[0][1],main[0][2],main[0][3],main[0][4])
-print(main[1][0],main[1][1],main[1][2],main[1][3],main[1][4])
+#출금
+    elif menu =="2":
+        withdraw = int(input("지출: "))
+        if withdraw > balance:
+            print("잔액 부족")
+        else:
+            N = str(input("작성일: "))
+            balance -= withdraw
+            main.append(["출금", withdraw, balance, N])
+            print("출금 완료!")
+
+#잔액 확인
+    elif menu == "3":
+        print("현재 잔액:", balance, "원")
+
+#거래 내역
+    elif menu == "4":
+        for item in main:
+            print(item)
+
+#종료
+    elif menu == "5":
+        print("프로그램 종료.")
+        break
+
+#잘못된 메뉴 번호
+    else:
+        print("올바른 번호를 입력하세요.")

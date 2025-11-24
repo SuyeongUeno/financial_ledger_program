@@ -1,6 +1,36 @@
-# Personal Finance Ledger – Python CLI Application
-### version_0.8.0  
-📅 First created: 2025-11-23
+# Personal Finance Ledger – Python CLI Application  
+### version_0.9.0  
+📅 First created: 2025-11-23  
+📅 Last updated: 2025-11-24
+
+---
+
+## 🚀 What’s New in version_0.9.0
+
+This update introduces the first fully interactive CLI version of the ledger.
+
+### ✔ Added Features  
+- Added a menu-driven interface  
+  - Deposit  
+  - Withdraw  
+  - Check current balance  
+  - View transaction history  
+  - Exit program  
+- Transactions now support **multiple inputs** through a continuous loop (`while True`)
+- Each transaction is recorded with:
+  - Type (Deposit / Withdraw)
+  - Amount  
+  - Updated balance  
+  - Date (entered by user)
+
+### ✔ Improved Structure  
+- Previous Version_0.8.0 one-time execution system removed  
+- Replaced with a persistent loop that allows continuous operations  
+- Data structure unified under a single `main` list  
+
+### ✔ Version Tag  
+This project is still in development and does not save data externally.  
+Version_1.0.0 will be released when persistent file storage is added.
 
 ---
 
@@ -30,18 +60,21 @@ Then it outputs:
 ---
 
 ## ▶️ How to Run
-
-- run F.L.P.py.
+```bash
+python3 account_book_v1.py
+```
 
 ---
 
 ## 🧾 Example Output (Text)
 
 ```text
-===거래 내역===
-잔액: 30000원
-입금 원금: 0원 50000원 50000원 2025-11-23
-출금 원금: 50000원 20000원 30000원 2025-11-23
+====메뉴====
+1. 입금
+2. 출금
+3. 잔액 보기
+4. 거래 내역 보기
+5. 종료
 ```
 
 ---
