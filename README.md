@@ -1,11 +1,11 @@
 # Personal Finance Ledger – Python CLI Application  
-### version_0.9.0  
+### version_0.9.2  
 📅 First created: 2025-11-23  
 📅 Last updated: 2025-11-24
 
 ---
 
-## 🚀 What’s New in version_0.9.0
+## 🚀 What’s New in version_0.9.2
 
 This update introduces the first fully interactive CLI version of the ledger.
 
@@ -21,7 +21,7 @@ This update introduces the first fully interactive CLI version of the ledger.
   - Type (Deposit / Withdraw)
   - Amount  
   - Updated balance  
-  - Date (entered by user)
+  - Automatic date setting
 
 ### ✔ Improved Structure  
 - Previous Version_0.8.0 one-time execution system removed  

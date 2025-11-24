@@ -15,9 +15,11 @@ while True:
 
     menu = input("메뉴를 선택하세요.")
 #입금
+    from datetime import datetime
+
     if menu == "1":    
         deposit = int(input("수익: "))
-        N = str(input("작성일: "))
+        N = datetime.today().strftime("%Y-%m-%d")
         balance += deposit
         main.append(["입금", deposit, balance, N])
         print("입금 완료!")
@@ -28,7 +30,7 @@ while True:
         if withdraw > balance:
             print("잔액 부족")
         else:
-            N = str(input("작성일: "))
+            N = datetime.today().strftime("%Y-%m-%d")
             balance -= withdraw
             main.append(["출금", withdraw, balance, N])
             print("출금 완료!")
